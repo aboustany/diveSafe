@@ -7,7 +7,6 @@ This GitHub repository contains an implementation of the DiveSafe application fo
 DiveSafe must be used by any potential
 visitor to the island to register as a member and to book dive guides, equipment, and hotels for any diving trip.
 
-For more information about the DiveSafe application, please consult the [wiki](../../wiki).
 
 ## Team Members
 
