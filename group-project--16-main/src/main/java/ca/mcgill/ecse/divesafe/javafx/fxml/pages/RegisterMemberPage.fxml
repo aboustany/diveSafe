@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="650.0" minWidth="800.0" prefHeight="748.0" prefWidth="1043.0" stylesheets="@cssstyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.divesafe.fxml.controllers.RegisterMemberPageController">
+   <children>
+      <GridPane prefHeight="791.0" prefWidth="1043.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="395.0" prefWidth="394.6666259765625" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="650.0" prefWidth="649.3333740234375" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="47.333343505859375" minHeight="47.0" prefHeight="47.333343505859375" vgrow="NEVER" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="700.0" prefHeight="700.6666564941406" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="295.0" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="36.66664632161459" />
+                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="163.66666666666666" minWidth="150.0" prefWidth="156.33329264322916" />
+                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="199.99991861979166" minWidth="150.0" prefWidth="177.3333740234375" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="33.333414713541686" minWidth="10.0" prefWidth="33.333414713541686" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="147.00000762939453" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="77.00004069010416" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="68.33331298828125" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="63.0" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="73.99997965494794" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="84.99996948242193" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="150.0" minHeight="0.0" prefHeight="77.66664632161462" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="153.66668701171875" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <Label text="Member Email" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="registerMemberPasswordInput" prefHeight="29.0" prefWidth="228.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="2" />
+                  <Label text="Password" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="registerMemberEmailInput" prefHeight="29.0" prefWidth="151.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="1" />
+                  <TextField fx:id="registerMemberNameInput" prefHeight="29.0" prefWidth="228.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" />
+                  <Label text="Emergency Contact" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="registerMemberEmergencyContactInput" prefHeight="29.0" prefWidth="228.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="4" />
+                  <Label text="Number of Days" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Spinner fx:id="registerMemberNumberOfDaysInput" prefHeight="29.0" prefWidth="178.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="5" />
+                  <Label text="Name" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <CheckBox fx:id="registerMemberGuideRequiredInput" alignment="CENTER" mnemonicParsing="false" onAction="#toggleGuideRequired" prefHeight="17.0" prefWidth="122.0" text="Guide Required" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="registerMemberHotelRequiredInput" alignment="CENTER" mnemonicParsing="false" onAction="#toggleHotelRequired" text="Hotel Required" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="6">
+                     <opaqueInsets>
+                        <Insets left="10.0" />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="1043.0" text="Register Member" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="524.9999694824219" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="287.33329264322913" minWidth="10.0" prefWidth="147.33336385091138" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="96.33334350585938" minHeight="0.0" prefHeight="36.66665530204773" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="275.66668701171875" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="358.0" minHeight="0.0" prefHeight="24.33331298828125" vgrow="NEVER" />
+                  <RowConstraints maxHeight="411.33329264322913" minHeight="0.0" prefHeight="31.66668701171875" vgrow="NEVER" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="317.33329264322924" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="31.333251953125" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="registerMemberEquipmentTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="202.0" prefWidth="301.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="registerMemberBundleTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="352.0" prefWidth="525.0" GridPane.rowIndex="4">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="registerMemberRegisterButton" mnemonicParsing="false" onAction="#addMemberToDiveSafe" prefHeight="29.0" prefWidth="116.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.vgrow="NEVER" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="513.0" text="Available Equipment Bundles" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="513.0" text="Available Equipment">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

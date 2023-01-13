@@ -1,0 +1,1069 @@
+{
+  "DiveSafe": {
+    "startDate": "2022-04-01",
+    "numDays": 5,
+    "priceOfGuidePerDay": 50,
+    "administrator": {
+      "email": "admin@ad.atl",
+      "password": "admin",
+      "diveSafe": {
+        "@reference": "../.."
+      }
+    },
+    "guides": [
+      {
+        "Guide": [
+          {
+            "email": "alice@gmail.com",
+            "password": "pwd1",
+            "name": "Alice Hill",
+            "emergencyContact": "(222) 123-4567",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          },
+          {
+            "email": "bob@gmail.com",
+            "password": "password",
+            "name": "Bob Hill",
+            "emergencyContact": "(222) 123-4568",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          },
+          {
+            "email": "dave@gmail.com",
+            "password": "passwd",
+            "name": "Dave Hill",
+            "emergencyContact": "(222) 123-4569",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          },
+          {
+            "email": "kyle@gmail.com",
+            "password": "pass",
+            "name": "Kyle Hill",
+            "emergencyContact": "(222) 123-4570",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          },
+          {
+            "email": "sarah@yahoo.ca",
+            "password": "pwd",
+            "name": "Sarah Hill",
+            "emergencyContact": "(222) 123-7671",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "members": [
+      {
+        "Member": [
+          {
+            "email": "joe@hotmail.com",
+            "password": 1234,
+            "name": "Joe Black",
+            "emergencyContact": "(222) 987-6540",
+            "numDays": 2,
+            "guideRequired": true,
+            "hotelRequired": false,
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "itemBookings": [
+              {
+                "ItemBooking": [
+                  {
+                    "quantity": 1,
+                    "diveSafe": {
+                      "@reference": "../../../../.."
+                    },
+                    "member": {
+                      "@reference": "../../.."
+                    },
+                    "item": {
+                      "@class": "Equipment",
+                      "name": "BCD",
+                      "itemBookings": [
+                        {
+                          "ItemBooking": {
+                            "@reference": "../../.."
+                          }
+                        }
+                      ],
+                      "weight": 85,
+                      "pricePerDay": 17,
+                      "diveSafe": {
+                        "@reference": "../../../../../.."
+                      },
+                      "bundleItems": [
+                        {
+                          "BundleItem": [
+                            {
+                              "quantity": 2,
+                              "diveSafe": {
+                                "@reference": "../../../../../../../.."
+                              },
+                              "bundle": {
+                                "name": "premium",
+                                "itemBookings": [
+                                  ""
+                                ],
+                                "discount": 28,
+                                "diveSafe": {
+                                  "@reference": "../../../../../../../../.."
+                                },
+                                "bundleItems": [
+                                  {
+                                    "BundleItem": [
+                                      {
+                                        "quantity": 2,
+                                        "diveSafe": {
+                                          "@reference": "../../../../../../../../../../.."
+                                        },
+                                        "bundle": {
+                                          "@reference": "../../.."
+                                        },
+                                        "equipment": {
+                                          "name": "wetsuit",
+                                          "itemBookings": [
+                                            {
+                                              "ItemBooking": {
+                                                "quantity": 1,
+                                                "diveSafe": {
+                                                  "@reference": "../../../../../../../../../../../../../.."
+                                                },
+                                                "member": {
+                                                  "email": "jane@hotmail.com",
+                                                  "password": 1234,
+                                                  "name": "Jane Black",
+                                                  "emergencyContact": "(222) 987-6541",
+                                                  "numDays": 3,
+                                                  "guideRequired": false,
+                                                  "hotelRequired": false,
+                                                  "diveSafe": {
+                                                    "@reference": "../../../../../../../../../../../../../../.."
+                                                  },
+                                                  "itemBookings": [
+                                                    {
+                                                      "ItemBooking": [
+                                                        {
+                                                          "quantity": 1,
+                                                          "diveSafe": {
+                                                            "@reference": "../../../../../../../../../../../../../../../../.."
+                                                          },
+                                                          "member": {
+                                                            "@reference": "../../.."
+                                                          },
+                                                          "item": {
+                                                            "@class": "Equipment",
+                                                            "name": "dive boots",
+                                                            "itemBookings": [
+                                                              {
+                                                                "ItemBooking": {
+                                                                  "@reference": "../../.."
+                                                                }
+                                                              }
+                                                            ],
+                                                            "weight": 430,
+                                                            "pricePerDay": 25,
+                                                            "diveSafe": {
+                                                              "@reference": "../../../../../../../../../../../../../../../../../.."
+                                                            },
+                                                            "bundleItems": [
+                                                              {
+                                                                "BundleItem": {
+                                                                  "quantity": 2,
+                                                                  "diveSafe": {
+                                                                    "@reference": "../../../../../../../../../../../../../../../../../../../.."
+                                                                  },
+                                                                  "bundle": {
+                                                                    "name": "ultimate",
+                                                                    "itemBookings": [
+                                                                      {
+                                                                        "ItemBooking": {
+                                                                          "quantity": 2,
+                                                                          "diveSafe": {
+                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                          },
+                                                                          "member": {
+                                                                            "email": "jon@hotmail.com",
+                                                                            "password": 1234,
+                                                                            "name": "Jon Black",
+                                                                            "emergencyContact": "(222) 987-6544",
+                                                                            "numDays": 3,
+                                                                            "guideRequired": true,
+                                                                            "hotelRequired": false,
+                                                                            "diveSafe": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "itemBookings": [
+                                                                              {
+                                                                                "ItemBooking": [
+                                                                                  {
+                                                                                    "@reference": "../../.."
+                                                                                  },
+                                                                                  {
+                                                                                    "quantity": 1,
+                                                                                    "diveSafe": {
+                                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                    },
+                                                                                    "member": {
+                                                                                      "@reference": "../../.."
+                                                                                    },
+                                                                                    "item": {
+                                                                                      "@class": "Equipment",
+                                                                                      "name": "net",
+                                                                                      "itemBookings": [
+                                                                                        {
+                                                                                          "ItemBooking": {
+                                                                                            "@reference": "../../.."
+                                                                                          }
+                                                                                        }
+                                                                                      ],
+                                                                                      "weight": 800,
+                                                                                      "pricePerDay": 21,
+                                                                                      "diveSafe": {
+                                                                                        "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                      },
+                                                                                      "bundleItems": [
+                                                                                        {
+                                                                                          "BundleItem": {
+                                                                                            "quantity": 1,
+                                                                                            "diveSafe": {
+                                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                            },
+                                                                                            "bundle": {
+                                                                                              "@reference": "../../../../../../../../.."
+                                                                                            },
+                                                                                            "equipment": {
+                                                                                              "@reference": "../../.."
+                                                                                            },
+                                                                                            "cachedHashCode": -1,
+                                                                                            "canSetBundle": true,
+                                                                                            "canSetEquipment": true
+                                                                                          }
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    "cachedHashCode": -1,
+                                                                                    "canSetMember": true,
+                                                                                    "canSetItem": true
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          "item": {
+                                                                            "@class": "EquipmentBundle",
+                                                                            "@reference": "../../.."
+                                                                          },
+                                                                          "cachedHashCode": -1,
+                                                                          "canSetMember": true,
+                                                                          "canSetItem": true
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "discount": 32,
+                                                                    "diveSafe": {
+                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../.."
+                                                                    },
+                                                                    "bundleItems": [
+                                                                      {
+                                                                        "BundleItem": [
+                                                                          {
+                                                                            "quantity": 3,
+                                                                            "diveSafe": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "bundle": {
+                                                                              "@reference": "../../.."
+                                                                            },
+                                                                            "equipment": {
+                                                                              "name": "rope",
+                                                                              "itemBookings": [
+                                                                                {
+                                                                                  "ItemBooking": {
+                                                                                    "quantity": 1,
+                                                                                    "diveSafe": {
+                                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                    },
+                                                                                    "member": {
+                                                                                      "@reference": "../../../../../../../../../../../.."
+                                                                                    },
+                                                                                    "item": {
+                                                                                      "@class": "Equipment",
+                                                                                      "@reference": "../../.."
+                                                                                    },
+                                                                                    "cachedHashCode": -1,
+                                                                                    "canSetMember": true,
+                                                                                    "canSetItem": true
+                                                                                  }
+                                                                                }
+                                                                              ],
+                                                                              "weight": 1000,
+                                                                              "pricePerDay": 30,
+                                                                              "diveSafe": {
+                                                                                "@reference": "../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                              },
+                                                                              "bundleItems": [
+                                                                                {
+                                                                                  "BundleItem": [
+                                                                                    {
+                                                                                      "quantity": 2,
+                                                                                      "diveSafe": {
+                                                                                        "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                      },
+                                                                                      "bundle": {
+                                                                                        "name": "standard",
+                                                                                        "itemBookings": [
+                                                                                          ""
+                                                                                        ],
+                                                                                        "discount": 20,
+                                                                                        "diveSafe": {
+                                                                                          "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                        },
+                                                                                        "bundleItems": [
+                                                                                          {
+                                                                                            "BundleItem": [
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "bundle": {
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "equipment": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetBundle": true,
+                                                                                                "canSetEquipment": true
+                                                                                              },
+                                                                                              {
+                                                                                                "@reference": "../../.."
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      },
+                                                                                      "equipment": {
+                                                                                        "@reference": "../../.."
+                                                                                      },
+                                                                                      "cachedHashCode": -1,
+                                                                                      "canSetBundle": true,
+                                                                                      "canSetEquipment": true
+                                                                                    },
+                                                                                    {
+                                                                                      "quantity": 2,
+                                                                                      "diveSafe": {
+                                                                                        "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                      },
+                                                                                      "bundle": {
+                                                                                        "name": "plus",
+                                                                                        "itemBookings": [
+                                                                                          {
+                                                                                            "ItemBooking": [
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "member": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "item": {
+                                                                                                  "@class": "EquipmentBundle",
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetMember": true,
+                                                                                                "canSetItem": true
+                                                                                              },
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "member": {
+                                                                                                  "email": "jack@hotmail.com",
+                                                                                                  "password": 1234,
+                                                                                                  "name": "Jack Black",
+                                                                                                  "emergencyContact": "(222) 987-6542",
+                                                                                                  "numDays": 4,
+                                                                                                  "guideRequired": true,
+                                                                                                  "hotelRequired": true,
+                                                                                                  "diveSafe": {
+                                                                                                    "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                  },
+                                                                                                  "itemBookings": [
+                                                                                                    {
+                                                                                                      "ItemBooking": [
+                                                                                                        {
+                                                                                                          "quantity": 1,
+                                                                                                          "diveSafe": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "member": {
+                                                                                                            "@reference": "../../.."
+                                                                                                          },
+                                                                                                          "item": {
+                                                                                                            "@class": "Equipment",
+                                                                                                            "name": "snorkel",
+                                                                                                            "itemBookings": [
+                                                                                                              {
+                                                                                                                "ItemBooking": {
+                                                                                                                  "@reference": "../../.."
+                                                                                                                }
+                                                                                                              }
+                                                                                                            ],
+                                                                                                            "weight": 50,
+                                                                                                            "pricePerDay": 12,
+                                                                                                            "diveSafe": {
+                                                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                            },
+                                                                                                            "bundleItems": [
+                                                                                                              {
+                                                                                                                "BundleItem": [
+                                                                                                                  {
+                                                                                                                    "quantity": 2,
+                                                                                                                    "diveSafe": {
+                                                                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                                    },
+                                                                                                                    "bundle": {
+                                                                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                                    },
+                                                                                                                    "equipment": {
+                                                                                                                      "@reference": "../../.."
+                                                                                                                    },
+                                                                                                                    "cachedHashCode": -1,
+                                                                                                                    "canSetBundle": true,
+                                                                                                                    "canSetEquipment": true
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                    "quantity": 2,
+                                                                                                                    "diveSafe": {
+                                                                                                                      "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                                    },
+                                                                                                                    "bundle": {
+                                                                                                                      "@reference": "../../../../../../../../../../../../../../.."
+                                                                                                                    },
+                                                                                                                    "equipment": {
+                                                                                                                      "@reference": "../../.."
+                                                                                                                    },
+                                                                                                                    "cachedHashCode": -1,
+                                                                                                                    "canSetBundle": true,
+                                                                                                                    "canSetEquipment": true
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          },
+                                                                                                          "cachedHashCode": -1,
+                                                                                                          "canSetMember": true,
+                                                                                                          "canSetItem": true
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "@reference": "../../.."
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                "item": {
+                                                                                                  "@class": "EquipmentBundle",
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetMember": true,
+                                                                                                "canSetItem": true
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ],
+                                                                                        "discount": 25,
+                                                                                        "diveSafe": {
+                                                                                          "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                        },
+                                                                                        "bundleItems": [
+                                                                                          {
+                                                                                            "BundleItem": [
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "bundle": {
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "equipment": {
+                                                                                                  "name": "goggles",
+                                                                                                  "itemBookings": [
+                                                                                                    ""
+                                                                                                  ],
+                                                                                                  "weight": 30,
+                                                                                                  "pricePerDay": 6,
+                                                                                                  "diveSafe": {
+                                                                                                    "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                  },
+                                                                                                  "bundleItems": [
+                                                                                                    {
+                                                                                                      "BundleItem": [
+                                                                                                        {
+                                                                                                          "@reference": "../../.."
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "quantity": 2,
+                                                                                                          "diveSafe": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "bundle": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "equipment": {
+                                                                                                            "@reference": "../../.."
+                                                                                                          },
+                                                                                                          "cachedHashCode": -1,
+                                                                                                          "canSetBundle": true,
+                                                                                                          "canSetEquipment": true
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "quantity": 2,
+                                                                                                          "diveSafe": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "bundle": {
+                                                                                                            "@reference": "../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "equipment": {
+                                                                                                            "@reference": "../../.."
+                                                                                                          },
+                                                                                                          "cachedHashCode": -1,
+                                                                                                          "canSetBundle": true,
+                                                                                                          "canSetEquipment": true
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetBundle": true,
+                                                                                                "canSetEquipment": true
+                                                                                              },
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "bundle": {
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "equipment": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetBundle": true,
+                                                                                                "canSetEquipment": true
+                                                                                              },
+                                                                                              {
+                                                                                                "@reference": "../../.."
+                                                                                              },
+                                                                                              {
+                                                                                                "quantity": 1,
+                                                                                                "diveSafe": {
+                                                                                                  "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                },
+                                                                                                "bundle": {
+                                                                                                  "@reference": "../../.."
+                                                                                                },
+                                                                                                "equipment": {
+                                                                                                  "name": "fins",
+                                                                                                  "itemBookings": [
+                                                                                                    ""
+                                                                                                  ],
+                                                                                                  "weight": 57,
+                                                                                                  "pricePerDay": 8,
+                                                                                                  "diveSafe": {
+                                                                                                    "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                  },
+                                                                                                  "bundleItems": [
+                                                                                                    {
+                                                                                                      "BundleItem": [
+                                                                                                        {
+                                                                                                          "@reference": "../../.."
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "quantity": 2,
+                                                                                                          "diveSafe": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "bundle": {
+                                                                                                            "@reference": "../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                                          },
+                                                                                                          "equipment": {
+                                                                                                            "@reference": "../../.."
+                                                                                                          },
+                                                                                                          "cachedHashCode": -1,
+                                                                                                          "canSetBundle": true,
+                                                                                                          "canSetEquipment": true
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                "cachedHashCode": -1,
+                                                                                                "canSetBundle": true,
+                                                                                                "canSetEquipment": true
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      },
+                                                                                      "equipment": {
+                                                                                        "@reference": "../../.."
+                                                                                      },
+                                                                                      "cachedHashCode": -1,
+                                                                                      "canSetBundle": true,
+                                                                                      "canSetEquipment": true
+                                                                                    },
+                                                                                    {
+                                                                                      "quantity": 3,
+                                                                                      "diveSafe": {
+                                                                                        "@reference": "../../../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                                      },
+                                                                                      "bundle": {
+                                                                                        "@reference": "../../../../../../../../../../../../../../../../../.."
+                                                                                      },
+                                                                                      "equipment": {
+                                                                                        "@reference": "../../.."
+                                                                                      },
+                                                                                      "cachedHashCode": -1,
+                                                                                      "canSetBundle": true,
+                                                                                      "canSetEquipment": true
+                                                                                    },
+                                                                                    {
+                                                                                      "@reference": "../../.."
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            "cachedHashCode": -1,
+                                                                            "canSetBundle": true,
+                                                                            "canSetEquipment": true
+                                                                          },
+                                                                          {
+                                                                            "quantity": 2,
+                                                                            "diveSafe": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "bundle": {
+                                                                              "@reference": "../../.."
+                                                                            },
+                                                                            "equipment": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "cachedHashCode": -1,
+                                                                            "canSetBundle": true,
+                                                                            "canSetEquipment": true
+                                                                          },
+                                                                          {
+                                                                            "@reference": "../BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[3]"
+                                                                          },
+                                                                          {
+                                                                            "@reference": "../BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking/item/bundleItems/BundleItem[2]"
+                                                                          },
+                                                                          {
+                                                                            "quantity": 2,
+                                                                            "diveSafe": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "bundle": {
+                                                                              "@reference": "../../.."
+                                                                            },
+                                                                            "equipment": {
+                                                                              "name": "oxygen tank",
+                                                                              "itemBookings": [
+                                                                                ""
+                                                                              ],
+                                                                              "weight": 12000,
+                                                                              "pricePerDay": 52,
+                                                                              "diveSafe": {
+                                                                                "@reference": "../../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                              },
+                                                                              "bundleItems": [
+                                                                                {
+                                                                                  "BundleItem": {
+                                                                                    "@reference": "../../.."
+                                                                                  }
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            "cachedHashCode": -1,
+                                                                            "canSetBundle": true,
+                                                                            "canSetEquipment": true
+                                                                          },
+                                                                          {
+                                                                            "quantity": 2,
+                                                                            "diveSafe": {
+                                                                              "@reference": "../../../../../../../../../../../../../../../../../../../../../../.."
+                                                                            },
+                                                                            "bundle": {
+                                                                              "@reference": "../../.."
+                                                                            },
+                                                                            "equipment": {
+                                                                              "@reference": "../../../../../../../../../../../.."
+                                                                            },
+                                                                            "cachedHashCode": -1,
+                                                                            "canSetBundle": true,
+                                                                            "canSetEquipment": true
+                                                                          },
+                                                                          {
+                                                                            "@reference": "../../itemBookings/ItemBooking/member/itemBookings/ItemBooking[2]/item/bundleItems/BundleItem"
+                                                                          },
+                                                                          {
+                                                                            "@reference": "../../.."
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  "equipment": {
+                                                                    "@reference": "../../.."
+                                                                  },
+                                                                  "cachedHashCode": -1,
+                                                                  "canSetBundle": true,
+                                                                  "canSetEquipment": true
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          "cachedHashCode": -1,
+                                                          "canSetMember": true,
+                                                          "canSetItem": true
+                                                        },
+                                                        {
+                                                          "@reference": "../ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking"
+                                                        },
+                                                        {
+                                                          "@reference": "../../.."
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                "item": {
+                                                  "@class": "Equipment",
+                                                  "@reference": "../../.."
+                                                },
+                                                "cachedHashCode": -1,
+                                                "canSetMember": true,
+                                                "canSetItem": true
+                                              }
+                                            }
+                                          ],
+                                          "weight": 900,
+                                          "pricePerDay": 11,
+                                          "diveSafe": {
+                                            "@reference": "../../../../../../../../../../../.."
+                                          },
+                                          "bundleItems": [
+                                            {
+                                              "BundleItem": [
+                                                {
+                                                  "@reference": "../../itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem/bundle/bundleItems/BundleItem"
+                                                },
+                                                {
+                                                  "@reference": "../../itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[2]"
+                                                },
+                                                {
+                                                  "@reference": "../../.."
+                                                },
+                                                {
+                                                  "@reference": "../../itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[6]"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "cachedHashCode": -1,
+                                        "canSetBundle": true,
+                                        "canSetEquipment": true
+                                      },
+                                      {
+                                        "@reference": "../../.."
+                                      },
+                                      {
+                                        "@reference": "../BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]"
+                                      },
+                                      {
+                                        "@reference": "../BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking/item/bundleItems/BundleItem"
+                                      },
+                                      {
+                                        "@reference": "../BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[4]/equipment/bundleItems/BundleItem[2]"
+                                      },
+                                      {
+                                        "@reference": "../BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[3]"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "equipment": {
+                                "@reference": "../../.."
+                              },
+                              "cachedHashCode": -1,
+                              "canSetBundle": true,
+                              "canSetEquipment": true
+                            },
+                            {
+                              "@reference": "../BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[2]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "cachedHashCode": -1,
+                    "canSetMember": true,
+                    "canSetItem": true
+                  },
+                  {
+                    "@reference": "../ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "@reference": "../Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member"
+          },
+          {
+            "@reference": "../Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member"
+          },
+          {
+            "email": "julie@hotmail.com",
+            "password": 1234,
+            "name": "Julie Black",
+            "emergencyContact": "(222) 987-6543",
+            "numDays": 1,
+            "guideRequired": true,
+            "hotelRequired": false,
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "itemBookings": [
+              ""
+            ]
+          },
+          {
+            "@reference": "../Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/itemBookings/ItemBooking/member"
+          }
+        ]
+      }
+    ],
+    "itemBookings": [
+      {
+        "ItemBooking": [
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/itemBookings/ItemBooking"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/itemBookings/ItemBooking/member/itemBookings/ItemBooking[2]"
+          }
+        ]
+      }
+    ],
+    "equipments": [
+      {
+        "Equipment": [
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[4]/equipment"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem/equipment"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking/item"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/itemBookings/ItemBooking/member/itemBookings/ItemBooking[2]/item"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[5]/equipment"
+          }
+        ]
+      }
+    ],
+    "bundles": [
+      {
+        "EquipmentBundle": [
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem/bundle"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle"
+          }
+        ]
+      }
+    ],
+    "bundleItems": [
+      {
+        "BundleItem": [
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem/bundle/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[4]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking/item/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem[4]/equipment/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[3]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[3]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/bundleItems/BundleItem[2]/bundle/itemBookings/ItemBooking[2]/member/itemBookings/ItemBooking/item/bundleItems/BundleItem[2]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[5]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem[6]"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/itemBookings/ItemBooking/member/itemBookings/ItemBooking[2]/item/bundleItems/BundleItem"
+          },
+          {
+            "@reference": "../../members/Member/itemBookings/ItemBooking/item/bundleItems/BundleItem/bundle/bundleItems/BundleItem/equipment/itemBookings/ItemBooking/member/itemBookings/ItemBooking/item/bundleItems/BundleItem"
+          }
+        ]
+      }
+    ],
+    "hotels": [
+      {
+        "Hotel": [
+          {
+            "name": "Divers' Lodge",
+            "address": "123 Mountain View Road",
+            "rating": 3,
+            "type": "Resort",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          },
+          {
+            "name": "High Peak",
+            "address": "455 Mountain View Road",
+            "rating": 4,
+            "type": "Villa",
+            "diveSafe": {
+              "@reference": "../../.."
+            },
+            "assignments": [
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "assignments": [
+      ""
+    ]
+  }
+}

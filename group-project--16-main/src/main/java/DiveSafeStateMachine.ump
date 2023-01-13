@@ -1,0 +1,43 @@
+class Assignment { 
+  
+  // authors: Shidan Javaheri, Karim Kanafani, Anthony Boustany, Sami Ferneini, Elsa Chelala, Shyam Desai
+  Integer refund=0; 
+  String authenticationCode=""; 
+  
+  assignmentStatus{ 
+    
+    Assigned { 
+      toggleBan() -> Banned;
+      startTripForDay(int day) [this.getStartDay() == day] -> Banned; 
+      confirmPayment(String code) [code != ""]/{this.authenticationCode = code;} -> Paid;
+      cancelTrip() / { this.refund = 100; } -> Cancelled; 
+      
+    } 
+    
+    Paid { 
+      startTripForDay(int day) [this.getStartDay() == day] -> Started;
+      cancelTrip() / {this.refund = 50;} -> Cancelled; 
+      
+      
+    } 
+    
+    Banned {
+      toggleBan() -> Assigned; 
+    } 
+    
+    Cancelled { 
+      
+    } 
+    
+    Started { 
+      cancelTrip() / { this.refund = 10; } -> Cancelled;
+      finishTrip()  -> Finished; 
+      
+    } 
+    
+    Finished { 
+      
+    } 
+  }
+  
+} 

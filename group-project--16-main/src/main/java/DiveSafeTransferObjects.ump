@@ -1,0 +1,43 @@
+namespace ca.mcgill.ecse.divesafe.controller;
+
+class TOAssignment {
+  memberEmail;
+  memberName;
+  guideEmail;
+  guideName;
+  hotelName;
+  Integer startDay;
+  Integer endDay;
+  Integer totalCostForGuide;
+  Integer totalCostForEquipment;
+  authorizationCode; 
+  Integer refund; 
+  status; 
+}
+ //@Author : Shidan Javaheri
+class TOEquipment { 
+	name; 
+	Integer weight; 
+	Integer pricePerDay; 
+	depend javafx.scene.control.Spinner;
+	Spinner equipmentQuantity; 
+	
+} 
+ //@Author : Shidan Javaheri
+class TOBundle { 
+	name; 
+	Integer discount; 
+	Integer pricePerDay;
+	depend javafx.scene.control.Spinner;
+	Spinner bundleQuantity;  
+	
+} 
+//@Author : Shidan Javaheri
+class TOMember { 
+	email; 
+	name; 
+	emergencyContact; 
+	Integer numberOfDays; 
+	Boolean guideRequired; 
+	Boolean hotelRequired;
+} 

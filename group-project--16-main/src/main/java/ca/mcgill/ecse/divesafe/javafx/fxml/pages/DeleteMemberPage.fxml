@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="memberDisplayPage" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="839.0" stylesheets="@cssstyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.divesafe.fxml.controllers.DeleteMemberPageController">
+   <children>
+      <GridPane fx:id="mainMemberDisplayGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="48.666666666666664" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="670.6666666666666" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="119.6666259765625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <GridPane fx:id="memberDisplayTableGrid" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="823.0" prefWidth="732.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints fillHeight="false" maxHeight="209.9999755859375" minHeight="35.2" prefHeight="48.600006103515625" vgrow="NEVER" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="429.6666666666667" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints fillHeight="false" maxHeight="98.00002034505212" minHeight="46.399975585937455" prefHeight="83.66666666666669" valignment="CENTER" vgrow="NEVER" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="memberDisplayTitle" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="802.0" text="Delete Member" textAlignment="CENTER" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.vgrow="NEVER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="memberDisplayTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="441.0" prefWidth="636.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                  <GridPane fx:id="searchByEmailGrid" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="600.0" minWidth="10.0" prefWidth="238.73330078125" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="17.399993896484375" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="600.0" minWidth="10.0" prefWidth="156.06669311523433" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="searchButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#searchMemberClicked" prefHeight="29.0" prefWidth="98.0" text="Search" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" />
+                        <TextField fx:id="emailInput" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="238.0" promptText="Enter Member Email" GridPane.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </GridPane>
+            <Button fx:id="deleteByTableButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteMemberByTableClicked" prefHeight="29.0" prefWidth="91.0" text="Delete" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

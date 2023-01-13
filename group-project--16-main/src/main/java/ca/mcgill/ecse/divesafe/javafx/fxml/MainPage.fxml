@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="600.0" prefHeight="807.0" prefWidth="1092.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="600.0" prefHeight="793.0" prefWidth="1067.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+         <tabs>
+            <Tab text="Members">
+               <content>
+                  <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="524.0" prefWidth="839.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Register">
+                           <content>
+                              <fx:include source="pages/RegisterMemberPage.fxml" />
+                           </content></Tab>
+                        <Tab text="Update">
+                           <content>
+                              <fx:include source="pages/UpdateMemberPage.fxml" />
+                           </content></Tab>
+                        <Tab text="Delete">
+                           <content>
+                              <fx:include maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="pages/DeleteMemberPage.fxml" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </content>
+            </Tab>
+            <Tab text="Assignment">
+               <content>
+                  <fx:include maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="pages/AssignmentPage.fxml" />
+               </content></Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>

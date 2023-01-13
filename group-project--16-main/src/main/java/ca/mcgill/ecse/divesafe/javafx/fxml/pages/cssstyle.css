@@ -1,0 +1,57 @@
+.root {
+    -fx-base: rgb(249, 253, 255); 
+    -fx-accent: #0096c9 ;
+    -fx-default-button: #abd8ed ;
+    -fx-focus-color: #039ed3;
+    -fx-faint-focus-color: #039ed322;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;    
+}
+
+
+#searchButton {
+	-fx-border-color: #e8e8e8;
+    -fx-background-color: #03dac6;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-border-width: 1;
+    -fx-smooth: true;
+}
+
+#initiateAssignmentsButton {
+	-fx-border-color: #e8e8e8;
+    -fx-background-color: #74e39a;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-border-width: 1;
+    -fx-smooth: true;
+	
+}
+
+#searchTripButton {
+	-fx-border-color: #e8e8e8;
+    -fx-background-color: #03dac6;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-border-width: 1;
+    -fx-smooth: true;
+}
+
+.check-box .box {
+	-fx-background-color: #ffffff;
+	-fx-border-color: #e3e7eb;
+	-fx-border-radius:1px; 
+}
+
+.check-box:selected .mark {
+	-fx-background-color: #ffffff;
+}
+
+.check-box:selected .box {
+	-fx-background-color: #00897b;
+}
+
+
